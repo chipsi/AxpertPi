@@ -2,7 +2,7 @@
 
 CURRENTUSERNAME=$SUDO_USER
 
-echo "User: $CURRENTUSERNAME"
+echo "Sudo User: $CURRENTUSERNAME"
 
 SUDO=
 if [ "$UID" != "0" ]; then
