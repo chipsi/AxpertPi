@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CURRENTUSERNAME=$SUDO_USER
+CURRENTUSERNAME=pi
 
 echo "Sudo User: $CURRENTUSERNAME"
 
