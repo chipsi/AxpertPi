@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CURRENTUSERNAME=$(whoami)
+CURRENTUSERNAME=$SUDO_USER
 
 echo "User: $CURRENTUSERNAME"
 
