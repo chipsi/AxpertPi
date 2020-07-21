@@ -42,19 +42,19 @@ $SUDO apt install -y python3-pip libffi-dev
 
 $SUDO pip3 install docker-compose
 
-$SUDO usermod -a -G docker $CURRENTUSERNAME
+$SUDO usermod -a -G docker pi
 sg "$(id -gn)"
 
-cd /home/$CURRENTUSERNAME
+cd /home/pi
 git clone https://github.com/BionicWeb/AxpertPi.git
-cd /home/$CURRENTUSERNAME/AxpertPi
+cd /home/pi/AxpertPi
 
-$SUDO mkdir /home/$CURRENTUSERNAME/homeassistant
-$SUDO cp -avr www /home/$CURRENTUSERNAME/homeassistant
-$SUDO cp -av configuration.yaml /home/$CURRENTUSERNAME/homeassistant
+$SUDO mkdir /home/pi/homeassistant
+$SUDO cp -avr www /home/pi/homeassistant
+$SUDO cp -av configuration.yaml /home/pi/homeassistant
 
-cd /home/$CURRENTUSERNAME/homeassistant
-$SUDO rm -rf /home/$CURRENTUSERNAME/AxpertPi
+cd /home/pi/homeassistant
+$SUDO rm -rf /home/pi/AxpertPi
 
 $SUDO git clone https://github.com/BionicWeb/docker-voltronic-homeassistant.git /opt/ha-inverter-mqtt-agent
 cd /opt/ha-inverter-mqtt-agent
