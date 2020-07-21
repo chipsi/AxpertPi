@@ -50,8 +50,8 @@ git clone https://github.com/BionicWeb/AxpertPi.git
 cd /home/$CURRENTUSERNAME/AxpertPi
 
 $SUDO mkdir /home/$CURRENTUSERNAME/homeassistant
-$SUDO cp -ar www /home/$CURRENTUSERNAME/homeassistant
-$SUDO cp configuration.yaml /home/$CURRENTUSERNAME/homeassistant
+$SUDO cp -avr www /home/$CURRENTUSERNAME/homeassistant
+$SUDO cp -av configuration.yaml /home/$CURRENTUSERNAME/homeassistant
 
 cd /home/$CURRENTUSERNAME/homeassistant
 $SUDO rm -rf /home/$CURRENTUSERNAME/AxpertPi
