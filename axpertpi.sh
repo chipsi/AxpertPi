@@ -45,12 +45,12 @@ cd /home/$USER
 git clone https://github.com/BionicWeb/AxpertPi.git
 cd /home/$USER/AxpertPi
 
-mkdir /home/$USER/homeassistant
-cp -ar www /home/$USER/homeassistant
-cp configuration.yaml /home/$USER/homeassistant
+$SUDO mkdir /home/$USER/homeassistant
+$SUDO cp -ar www /home/$USER/homeassistant
+$SUDO cp configuration.yaml /home/$USER/homeassistant
 
 cd /home/pi/homeassistant
-rm -rf /home/$USER/AxpertPi
+$SUDO rm -rf /home/$USER/AxpertPi
 
 $SUDO git clone https://github.com/BionicWeb/docker-voltronic-homeassistant.git /opt/ha-inverter-mqtt-agent
 cd /opt/ha-inverter-mqtt-agent
