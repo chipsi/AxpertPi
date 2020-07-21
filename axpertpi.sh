@@ -1,5 +1,7 @@
 #!/bin/bash
 
+USERNAME = logname
+
 SUDO=
 if [ "$UID" != "0" ]; then
 	if [ -e /usr/bin/sudo -o -e /bin/sudo ]; then
@@ -38,19 +40,19 @@ $SUDO apt install -y python3-pip libffi-dev
 
 $SUDO pip3 install docker-compose
 
-$SUDO usermod -a -G docker $USER
+$SUDO usermod -a -G docker pi
 sg "$(id -gn)"
 
-cd /home/$USER
+cd /home/$USERNAME
 git clone https://github.com/BionicWeb/AxpertPi.git
-cd /home/$USER/AxpertPi
+cd /home/$USERNAME/AxpertPi
 
-$SUDO mkdir /home/$USER/homeassistant
-$SUDO cp -ar www /home/$USER/homeassistant
-$SUDO cp configuration.yaml /home/$USER/homeassistant
+$SUDO mkdir /home/$USERNAME/homeassistant
+$SUDO cp -ar www /home/$USERNAME/homeassistant
+$SUDO cp configuration.yaml /home/$USERNAME/homeassistant
 
 cd /home/pi/homeassistant
-$SUDO rm -rf /home/$USER/AxpertPi
+$SUDO rm -rf /home/$USERNAME/AxpertPi
 
 $SUDO git clone https://github.com/BionicWeb/docker-voltronic-homeassistant.git /opt/ha-inverter-mqtt-agent
 cd /opt/ha-inverter-mqtt-agent
