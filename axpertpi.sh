@@ -33,11 +33,13 @@ $SUDO apt install -y --no-install-recommends \
     
 $SUDO systemctl enable docker
 $SUDO systemctl start docker
-$SUDO usermod -a -G docker $USER
-sg "$(id -gn)"
+
 $SUDO apt install -y python3-pip libffi-dev
 
 $SUDO pip3 install docker-compose
+
+$SUDO usermod -a -G docker $USER
+sg "$(id -gn)"
 
 $SUDO git clone https://github.com/BionicWeb/docker-voltronic-homeassistant.git /opt/ha-inverter-mqtt-agent
 cd /opt/ha-inverter-mqtt-agent
