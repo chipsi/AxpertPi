@@ -37,7 +37,5 @@ $SUDO apt install -y python3-pip libffi-dev
 
 $SUDO pip3 install docker-compose
 
-$SUDO git clone https://github.com/ned-kelly/docker-voltronic-homeassistant.git /opt/ha-inverter-mqtt-agent
+$SUDO git clone https://github.com/BionicWeb/docker-voltronic-homeassistant.git /opt/ha-inverter-mqtt-agent
 cd /opt/ha-inverter-mqtt-agent
-
-wget https://raw.githubusercontent.com/BionicWeb/AxpertPi/master/docker-compose.yml
