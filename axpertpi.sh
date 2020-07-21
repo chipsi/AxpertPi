@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERNAME = logname
+USERNAME=logname
 
 echo "User: $USERNAME"
 
