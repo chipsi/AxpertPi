@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CURRENTUSERNAME=logname
+CURRENTUSERNAME=$(logname)
 
 echo "User: $CURRENTUSERNAME"
 
