@@ -2,6 +2,8 @@
 
 USERNAME = logname
 
+echo "User: $USERNAME"
+
 SUDO=
 if [ "$UID" != "0" ]; then
 	if [ -e /usr/bin/sudo -o -e /bin/sudo ]; then
@@ -40,7 +42,7 @@ $SUDO apt install -y python3-pip libffi-dev
 
 $SUDO pip3 install docker-compose
 
-$SUDO usermod -a -G docker pi
+$SUDO usermod -a -G docker $USERNAME
 sg "$(id -gn)"
 
 cd /home/$USERNAME
