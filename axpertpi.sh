@@ -41,6 +41,17 @@ $SUDO pip3 install docker-compose
 $SUDO usermod -a -G docker $USER
 sg "$(id -gn)"
 
+cd /home/$USER
+git clone https://github.com/BionicWeb/AxpertPi.git
+cd /home/$USER/AxpertPi
+
+mkdir /home/$USER/homeassistant
+cp -ar www /home/$USER/homeassistant
+cp configuration.yaml /home/$USER/homeassistant
+
+cd /home/pi/homeassistant
+rm -rf /home/$USER/AxpertPi
+
 $SUDO git clone https://github.com/BionicWeb/docker-voltronic-homeassistant.git /opt/ha-inverter-mqtt-agent
 cd /opt/ha-inverter-mqtt-agent
 
