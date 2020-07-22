@@ -43,7 +43,7 @@ $SUDO apt install -y python3-pip libffi-dev
 $SUDO pip3 install docker-compose
 
 $SUDO usermod -a -G docker $CURRENTUSERNAME
-$SUDO exec sg docker newgrp `id -gn`
+#$SUDO exec sg docker newgrp `id -gn`
 
 cd /home/$CURRENTUSERNAME
 git clone https://github.com/BionicWeb/AxpertPi.git
