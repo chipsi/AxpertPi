@@ -6,6 +6,11 @@ default_config:
 tts:
   - platform: google_translate
 
+mqtt:
+  broker: localhost
+  discovery: true
+  discovery_prefix: homeassistant
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml

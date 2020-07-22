@@ -1,0 +1,23 @@
+{
+    "data": {
+        "items": [
+            {
+                "id": "a67f7b2caeaf40618275babee648720f",
+                "type": "module",
+                "url": "/local/circle-sensor-card.js"
+            },
+            {
+                "id": "2b742a71f5b24a5d9630f7065630d940",
+                "type": "module",
+                "url": "/local/mini-graph-card-bundle.js"
+            },
+            {
+                "id": "fb47a8c3f363458a8a3fee14756d639e",
+                "type": "module",
+                "url": "/local/vertical-stack-in-card.js"
+            }
+        ]
+    },
+    "key": "lovelace_resources",
+    "version": 1
+}
