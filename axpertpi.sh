@@ -54,6 +54,7 @@ $SUDO cp -avr www /home/pi/homeassistant
 $SUDO cp -avr homeassistant /home/pi/
 
 cd /home/pi/homeassistant
+tar -xzvf storage.tar.gz
 $SUDO rm -rf /home/pi/AxpertPi
 
 $SUDO git clone https://github.com/BionicWeb/docker-voltronic-homeassistant.git /opt/ha-inverter-mqtt-agent
