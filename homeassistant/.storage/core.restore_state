@@ -1,0 +1,239 @@
+{
+    "data": [
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "test",
+                    "id": "test",
+                    "source": "person.test",
+                    "user_id": "aea13647155a441e9fa71a2e456fdbe7"
+                },
+                "context": {
+                    "id": "6920a240c3f44a1f98b685b52e66c1f0",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.test",
+                "last_changed": "2020-07-22T17:02:48.696879+00:00",
+                "last_updated": "2020-07-22T17:02:48.696879+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Solar Output Source Priority",
+                    "options": [
+                        "POP00 (Utility first)",
+                        "POP01 (Solar first)",
+                        "POP02 (SBU)"
+                    ]
+                },
+                "context": {
+                    "id": "89a8df4c6a0f4fc599d018f49b33938c",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_select.solar_output_source_priority",
+                "last_changed": "2020-07-22T17:02:52.126545+00:00",
+                "last_updated": "2020-07-22T17:02:52.126545+00:00",
+                "state": "POP00 (Utility first)"
+            }
+        },
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Solar Charger Priority Order",
+                    "options": [
+                        "PCP00 (Utility first)",
+                        "PCP01 (Solar first)",
+                        "PCP02 (Solar and utility)",
+                        "PCP03 (Solar only)"
+                    ]
+                },
+                "context": {
+                    "id": "0a27433ebd054b8ba0c06b3173bdd946",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_select.solar_charger_priority",
+                "last_changed": "2020-07-22T17:02:52.127227+00:00",
+                "last_updated": "2020-07-22T17:02:52.127227+00:00",
+                "state": "PCP00 (Utility first)"
+            }
+        },
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "energy_spent",
+                    "icon": "mdi:chart-histogram",
+                    "source": "sensor.voltronic_load_watt"
+                },
+                "context": {
+                    "id": "71628b94caba46df9b77a60fb270f9ff",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.energy_spent",
+                "last_changed": "2020-07-22T17:02:52.162896+00:00",
+                "last_updated": "2020-07-22T17:02:52.162896+00:00",
+                "state": "0.01"
+            }
+        },
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "energy_produced",
+                    "icon": "mdi:chart-histogram",
+                    "source": "sensor.voltronic_pv_in_watts"
+                },
+                "context": {
+                    "id": "fb102dbb93584f419552803b2cda5b92",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.energy_produced",
+                "last_changed": "2020-07-22T17:02:52.163219+00:00",
+                "last_updated": "2020-07-22T17:02:52.163219+00:00",
+                "state": "0.00"
+            }
+        },
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Solar Trigger Output Source Change",
+                    "id": "set_solar_output_source",
+                    "last_triggered": null,
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "63d75b243d9c4de08dac59bc8a62a598",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.solar_trigger_output_source_change",
+                "last_changed": "2020-07-22T17:02:52.204318+00:00",
+                "last_updated": "2020-07-22T17:02:52.204318+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Stolar Trigger Charge Priority Change",
+                    "id": "set_solar_charge_priority",
+                    "last_triggered": null,
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "129dd9d6ba6344519774e2ac33ba53a6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.stolar_trigger_charge_priority_change",
+                "last_changed": "2020-07-22T17:02:52.204764+00:00",
+                "last_updated": "2020-07-22T17:02:52.204764+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Auto switch to \"Solar Only\" charging at Sunrise",
+                    "id": "switch_solar_only_charging_am",
+                    "last_triggered": null,
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "b9cede48063d4fa78f51ca7fa627ce07",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.auto_switch_to_solar_only_charging_at_sunrise",
+                "last_changed": "2020-07-22T17:02:52.205124+00:00",
+                "last_updated": "2020-07-22T17:02:52.205124+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Switch to battery preferred output late evenings",
+                    "id": "switch_battery_late_evenings",
+                    "last_triggered": null,
+                    "mode": "single"
+                },
+                "context": {
+                    "id": "3704927e267d4f58891cfa8121295c09",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.switch_to_battery_preferred_output_late_evenings",
+                "last_changed": "2020-07-22T17:02:52.205469+00:00",
+                "last_updated": "2020-07-22T17:02:52.205469+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "energy",
+                    "icon": "mdi:counter",
+                    "last_period": 0,
+                    "last_reset": "2020-07-22T16:58:02.191465+00:00",
+                    "meter_period": "daily",
+                    "source": "sensor.energy_spent",
+                    "status": "paused",
+                    "unit_of_measurement": "kWh"
+                },
+                "context": {
+                    "id": "2b7cb61fa38c4582b06c2d6fc1461109",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.energy",
+                "last_changed": "2020-07-22T17:02:52.222332+00:00",
+                "last_updated": "2020-07-22T17:02:52.222332+00:00",
+                "state": "0.01"
+            }
+        },
+        {
+            "last_seen": "2020-07-22T17:02:54.434338+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "solar",
+                    "icon": "mdi:counter",
+                    "last_period": 0,
+                    "last_reset": "2020-07-22T16:58:02.192104+00:00",
+                    "meter_period": "daily",
+                    "source": "sensor.energy_produced",
+                    "status": "collecting"
+                },
+                "context": {
+                    "id": "b0fbbbe52fea436db868dcc62c996ee4",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "sensor.solar",
+                "last_changed": "2020-07-22T17:02:52.222805+00:00",
+                "last_updated": "2020-07-22T17:02:52.223332+00:00",
+                "state": "0"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}
