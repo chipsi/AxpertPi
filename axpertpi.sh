@@ -51,7 +51,7 @@ cd /home/pi/AxpertPi
 
 $SUDO mkdir /home/pi/homeassistant
 $SUDO cp -avr www /home/pi/homeassistant
-$SUDO cp -av configuration.yaml /home/pi/homeassistant
+$SUDO cp -avr homeassistant /home/pi/
 
 cd /home/pi/homeassistant
 $SUDO rm -rf /home/pi/AxpertPi
