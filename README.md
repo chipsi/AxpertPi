@@ -65,4 +65,4 @@ Tue Mar 31 14:33:29 2020 INVERTER: QPIWS reply size (36 bytes)
 Tue Mar 31 14:33:29 2020 INVERTER: QPIWS: incorrect start/stop bytes. Buffer: (…
 Tue Mar 31 14:33:34 2020 INVERTER: Current CRC: F8 54
 ```
-Note the QPIRI reply size (102 bytes) as an example, use that value in /opt/ha-inverter-mqtt-agent/config/inverter.conf and for each command.
+Note the QPIRI reply size (102 bytes) as an example, use the 102 value in /opt/ha-inverter-mqtt-agent/config/inverter.conf, example qpiri=102 and for each command respectively.
