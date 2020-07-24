@@ -2,8 +2,6 @@
 
 An easy to use script to install https://github.com/ned-kelly/docker-voltronic-homeassistant.
 
-To install run the following command in bash on your pi:
-
 ## Prerequisites
 
 - Raspberry Pi 2/3/4 ( only tested on 3 and 4 )
