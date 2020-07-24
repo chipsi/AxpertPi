@@ -37,5 +37,6 @@ sudo nano config/inverter.conf
 ```
 
 7. Then, plug in your Serial or USB cable to the Inverter & stand up the container:
-8. Open your browser and navigate to your pi's ip example: http://192.168.1.50:8123
-9. Login with username pi and password raspberry.
+8. Open your browser and navigate to your pi's ip example: http://192.168.1.50:8123 (You can find your pi's ip by using fing https://www.fing.com/products/fing-app)
+9. Login to home assistant with username pi and password raspberry. (Please change this in home assistant)
+   If the data does not appear to update in home assistant go to the left menu -> 
