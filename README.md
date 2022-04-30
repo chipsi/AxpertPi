@@ -16,7 +16,7 @@ An easy to use script to install https://github.com/ned-kelly/docker-voltronic-h
 4. Change wpa_supplicant.conf and replace the following credentials with your wifi name, password and country code :
 ```
 country=ZA
-ssid=“mywifi"
+ssid="mywifi"
 psk="mypassword"
 ```
 
